@@ -1,4 +1,4 @@
-function song(num){
+const song = (num) => {
   var array = []
   for(var i = 99;i >2;i--){
     array.push(i + " bottles of beer on the wall, " +i+ " bottles of beer.")
