@@ -1,1 +1,0 @@
-These are algorithms collected and completed from CodeWars, HackerRank, and other prework/challenges. There is a combination of JavaScript (ES5/ES6) and Ruby. 
