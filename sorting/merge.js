@@ -35,4 +35,5 @@ const merge = (arr) => {
 }
 // let arr = [1,4,6,3,9,11,4,20,75,9,-5,12]
 
-console.log(merge([1,4,6,3,9,11,4,20,75,9,-5,12]))
+// console.log(merge([1,4,6,3,9,11,4,20,75,9,-5,12]))
+console.log(merge([1,4,3,2]))
