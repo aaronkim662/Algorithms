@@ -22,7 +22,7 @@
 //
 const { performance } = require('perf_hooks')
 const startTime = performance.now()
-const sort = (arr1, arr2, count) => {
+const sort = (arr1, arr2) => {
   let left = 0
   let right = 0
   let result = []
@@ -35,7 +35,6 @@ const sort = (arr1, arr2, count) => {
       left++
     }else {
       result.push(arr2[right])
-      count++
       right++
     }
   }
@@ -49,18 +48,17 @@ const sort = (arr1, arr2, count) => {
     result.push(arr2[right])
     right++
   }
-  console.log(count)
+
   return result
 
 }
 
-const mergeSort = (arr, count = 0) => {
+const mergeSort = (arr) => {
 
   if(arr.length < 2) return arr
   let middle = Math.floor(arr.length/2)
   let left = arr.slice(0, middle)
   let right = arr.slice(middle)
-  // console.log(count)
   return sort(mergeSort(left, count), mergeSort(right, count), count)
 }
 // const endTime = performance.now()
