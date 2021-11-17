@@ -6,15 +6,16 @@
 
 const selection = (arr) => {
   for(let i = 0; i < arr.length; i++){
-    let min = arr[i]
+    let min = i
     for(let j = 1 + i; j < arr.length; j++){
-      if(arr[j] < min){
-        [arr[i], arr[j]] = [arr[j], arr[i]]
+      if(arr[j] < arr[min]){
+        min = j
       }
     }
+    [arr[i], arr[min]] = [arr[min], arr[i]]
   }
   return arr
 }
 
-// console.log(selection([1,3,2]))
-console.log(selection([5,4,3,2,1,0,-1]))
+// console.log(selection([6,3,2,2,3]))
+console.log(selection([6,5,2,1,3, 3]))
